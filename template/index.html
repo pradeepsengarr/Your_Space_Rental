@@ -1,0 +1,779 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aler Template">
+    <meta name="keywords" content="Aler, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Space Rental</title>
+     <link rel = "icon" href ="{%static './img/Icon.jfif'%}" type = "image/x-icon">
+
+    <!------------------------- Google Font ------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
+    <!------------------------- Css Styles ------------------------->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+</head>
+
+<body>
+    <!------------------------- Page Preloder ------------------------->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!------------------------- Offcanvas Menu Wrapper Begin ------------------------->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <span class="icon_close"></span>
+        </div>
+        <div class="logo">
+            <a href="./index.html"><h6>YOUR SPACE RENTAL <i class="fa fa-home" style="font-size:28px"></i></h6></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="om-widget">
+            <ul>
+                <li><i class="icon_mail_alt"></i> yourspacerental@gmail.com</li>
+                <li><i class="fa fa-mobile-phone"></i> +91-9673245352 <span>+91-7236498265</span></li>
+            </ul>
+            <a href="#" class="hw-btn">Submit property</a>
+        </div>
+        <div class="om-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+    </div>
+    <!------------------------- Offcanvas Menu Wrapper End ------------------------->
+
+    <!------------------------- Header Section Begin ------------------------->
+    <header class="header-section">
+        <div class="hs-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="./"><h6>YOUR SPACE RENTAL <i class="fa fa-home" style="font-size:28px"></i></h6></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="ht-widget">
+                            <ul>
+                                <li><i class="icon_mail_alt"></i> yourspacerental@gmail.com</li>
+                                <li><i class="fa fa-mobile-phone"></i> +91-9673245352 <span>+91-7236498265</span></li>
+                            </ul>
+                            <a href="#" class="hw-btn">Submit property</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas-open">
+                    <span class="icon_menu"></span>
+                </div>
+            </div>
+        </div>
+        <div class="hs-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <nav class="nav-menu">
+                            <ul>
+                                <li class="active"><a href="./">Home</a></li>
+                                <li><a href="#">Properties</a>
+                                    <ul class="dropdown">
+                                        <!-- <li><a href="./profile.html">Property List</a></li> -->
+                                        <li><a href="./details">Property Detail</a></li>
+                                        <li><a href="./compare">Property Comparision</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./about">About</a></li>
+                                <li><a href="./contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="hn-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-----------------------Header End------------------------->
+
+    <!------------------------- Hero Section Begin ------------------------->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hs-slider owl-carousel">
+                <div class="hs-item set-bg" data-setbg="{%static 'img/hero/img01.jpg'%}">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hc-inner-text">
+                                <div class="hc-text">
+                                    <h4>Houses</h4>
+                                    <p><span class="icon_pin_alt"></span>Vardhman City, Patel Nagar,Raisen Road Bhopal</p>
+                                    <div class="label">For Rent</div>
+                                    <h5>₹ 5000<span>/month</span></h5>
+                                </div>
+                                <div class="hc-widget">
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2,283</li>
+                                        <li><i class="fa fa-bathtub"></i> 02</li>
+                                        <li><i class="fa fa-bed"></i> 04</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-item set-bg" data-setbg="{%static 'img/hero/img02.jpg'%}">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hc-inner-text">
+                                <div class="hc-text">
+                                    <h4>Rooms</h4>
+                                    <p><span class="icon_pin_alt"></span>E-75 Patel Nagar,Raisen Road Bhopal</p>
+                                    <div class="label">For Rent</div>
+                                    <h5>₹ 4500<span>/month</span></h5>
+                                </div>
+                                <div class="hc-widget">
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2,283</li>
+                                        <li><i class="fa fa-bathtub"></i> 01</li>
+                                        <li><i class="fa fa-bed"></i> 02</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-item set-bg" data-setbg="{%static 'img/hero/img03.jfif'%}">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hc-inner-text">
+                                <div class="hc-text">
+                                    <h4>Hostels</h4>
+                                    <p><span class="icon_pin_alt"></span>Prabhatam Heights Patel Nagar,Raisen Road Bhopal</p>
+                                    <div class="label">For Rent</div>
+                                    <h5>₹ 6000<span>/month</span></h5>
+                                </div>
+                                <div class="hc-widget">
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 02</li>
+                                        <li><i class="fa fa-bed"></i> 03</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------- Hero Section End ------------------------->
+
+    <!------------------------- Search Section Begin ------------------------->
+    <section class="search-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="section-title">
+                        <h4>Where would you rather live?</h4>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="change-btn">
+                        <div class="cb-item">
+                            <label for="cb-rent" class="active">
+                                For Rent
+                                <input type="radio" id="cb-rent">
+                            </label>
+                        </div>
+                        <div class="cb-item">
+                            <label for="cb-sale">
+                                For Sale
+                                <input type="radio" id="cb-sale">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-form-content">
+                <form action="#" class="filter-form">
+                    <select class="sm-width">
+                        <option value="" disabled selected>Location</option>
+                        <option value="">Bhopal</option>
+
+                    </select>
+                    <select class="sm-width">
+                        <option value=""disabled selected>Area</option>
+                        <option value="">Patel Nagar</option>
+                    </select>
+                    <select class="sm-width">
+                        <option value=""disabled selected>Property Status</option>
+                        <option value="">Empty</option>
+                    </select>
+                    <select class="sm-width">
+                        <option value=""disabled selected>Property Type</option>
+                        <option value="">1BKH</option>
+                        <option value="">2BKH</option>
+                    </select>
+                    <select class="sm-width">
+                        <option value=""disabled selected>No Of Bedrooms</option>
+                        <option value="">1 Room</option>
+                        <option value="">2 Room</option>
+                    </select>
+                    <select class="sm-width">
+                        <option value=""disabled selected>No Of Bathrooms</option>
+                        <option value="">1 BathRoom</option>
+                    </select>
+                    <div class="room-size-range-wrap sm-width">
+                        <div class="price-text">
+                            <label for="roomsizeRange">Size:</label>
+                            <input type="text" id="roomsizeRange" readonly>
+                        </div>
+                        <div id="roomsize-range" class="slider"></div>
+                    </div>
+                    <div class="price-range-wrap sm-width">
+                        <div class="price-text">
+                            <label for="priceRange">Price:</label>
+                            <input type="text" id="priceRange" readonly>
+                        </div>
+                        <div id="price-range" class="slider"></div>
+                    </div>
+                    <button type="button" class="search-btn sm-width">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!------------------------- Search Section End ------------------------->
+
+    <!------------------------- Property Section Begin ------------------------->
+    <section class="property-section latest-property-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="section-title">
+                        <h4>Latest PROPERTY</h4>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="property-controls">
+                        <ul>
+                            <li data-filter="all">All</li>
+                            <li data-filter=".house">House</li>
+                            <li data-filter=".office">Room</li>
+                            <li data-filter=".hotel">Hostel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row property-filter">
+                <div class="col-lg-4 col-md-6 mix all house">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg="{%static 'img/property/img02.jpg'%}">
+                            <div class="label">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                            <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                            <div class="pt-price">₹ 4890<span>/month</span></div>
+                            <h5><a href="#">Home in Patel Nagar</a></h5>
+                            <p><span class="icon_pin_alt"></span> Patel Nagar Raisen Road Bhopal</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 02</li>
+                                <li><i class="fa fa-bed"></i> 04</li>
+                                <li><i class="fa fa-automobile"></i> 01</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mix all restaurent hotel">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg="{%static 'img/property/img06.jpeg'%}">
+                            <div class="label c-red">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                            <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                            <div class="pt-price">₹ 3500.0<span>/month</span></div>
+                            <h5><a href="#">Boys Hostel</a></h5>
+                            <p><span class="icon_pin_alt"></span> Patel Nager Raisen Road Bhopal</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 01</li>
+                                <li><i class="fa fa-bed"></i> 02</li>
+                                <li><i class="fa fa-automobile"></i> 01</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mix all apart office">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg="{%static 'img/property/img03.jfif'%}">
+                            <div class="label c-red">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                            <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                            <div class="pt-price">₹ 3000.0<span>/month</span></div>
+                            <h5><a href="#">Rooms For All</a></h5>
+                            <p><span class="icon_pin_alt"></span> Patel Nagar Raisen Road Bhopal</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 01</li>
+                                <li><i class="fa fa-bed"></i> 01</li>
+                                <li><i class="fa fa-automobile"></i> 01</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mix all hotel restaruent">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg="{%static 'img/property/img07.jpeg'%}">
+                            <div class="label c-red">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                            <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                            <div class="pt-price">₹ 4000.0<span>/month</span></div>
+                            <h5><a href="#">Hostel</a></h5>
+                            <p><span class="icon_pin_alt"></span> Patel Nagar Raisen Road Bhopal</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 01</li>
+                                <li><i class="fa fa-bed"></i> 01</li>
+                                <li><i class="fa fa-automobile"></i> 01</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mix all office hotel">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg="{%static 'img/property/img04.jfif'%}">
+                            <div class="label c-magenta">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                            <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                            <div class="pt-price">₹ 3300.0<span>/month</span></div>
+                            <h5><a href="#">Boys Hostel</a></h5>
+                            <p><span class="icon_pin_alt"></span> Patel Nagar Raisen Road Bhopal</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 02</li>
+                                <li><i class="fa fa-bed"></i> 04</li>
+                                <li><i class="fa fa-automobile"></i> 01</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mix house apart office">
+                    <div class="property-item">
+                        <div class="pi-pic set-bg" data-setbg="{%static 'img/property/img01.jpeg'%}">
+                            <div class="label">For rent</div>
+                        </div>
+                        <div class="pi-text">
+                            <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                            <div class="pt-price">₹ 3890.0<span>/month</span></div>
+                            <h5><a href="#">Home in IBD</a></h5>
+                            <p><span class="icon_pin_alt"></span> Patel Nagar Raisen Road Bhopal</p>
+                            <ul>
+                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-bathtub"></i> 01</li>
+                                <li><i class="fa fa-bed"></i> 02</li>
+                                <li><i class="fa fa-automobile"></i> 01</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------- Property Section End ------------------------->
+
+    <!------------------------- Chooseus Section Begin ------------------------->
+    <section class="chooseus-section spad set-bg" data-setbg="{%static 'img/chooseus/chooseus-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="chooseus-text">
+                        <div class="section-title">
+                            <h4>Why choose us</h4>
+                        </div>
+                        <p>We help find, book rental homes of choice across Indian cities. We assist with move-in, provide home maintenance services from cleaning, damages to rent payment & even move-out.</p>
+                    </div>
+                    <div class="chooseus-features">
+                        <div class="cf-item">
+                            <div class="cf-pic">
+                                <img src="{%static 'img/chooseus/chooseus-icon-1.png'%}" alt="">
+                            </div>
+                            <div class="cf-text">
+                                <h5>Find your future House</h5>
+                                <p>We help you find a new home by offering a smart real estate.</p>
+                            </div>
+                        </div>
+                        <div class="cf-item">
+                            <div class="cf-pic">
+                                <img src="{%static 'img/chooseus/chooseus-icon-2.png'%}" alt="">
+                            </div>
+                            <div class="cf-text">
+                                <h5>Buy or rent House</h5>
+                                <p>Millions of houses and apartments in your favourite cities</p>
+                            </div>
+                        </div>
+                        <div class="cf-item">
+                            <div class="cf-pic">
+                                <img src="{%static 'img/chooseus/chooseus-icon-3.png'%}" alt="">
+                            </div>
+                            <div class="cf-text">
+                                <h5>Experienced agents</h5>
+                                <p>Find an agent who knows your market best</p>
+                            </div>
+                        </div>
+                        <div class="cf-item">
+                            <div class="cf-pic">
+                                <img src="{%static 'img/chooseus/chooseus-icon-4.png'%}" alt="">
+                            </div>
+                            <div class="cf-text">
+                                <h5>List your own property</h5>
+                                <p>Sign up now and sell or rent your own properties</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------- Chooseus Section End ------------------------->
+
+    <!------------------------- Feature Property Section Begin ------------------------->
+    <section class="feature-property-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 p-0">
+                    <div class="feature-property-left">
+                        <div class="section-title">
+                            <h4>Feature PROPERTY</h4>
+                        </div>
+                        <ul>
+                            <li>House</li>
+                            <li>Room</li>
+                            <li>Hostel</li>
+                        </ul>
+                        <a href="#">View all property</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 p-0">
+                    <div class="fp-slider owl-carousel">
+                        <div class="fp-item set-bg" data-setbg="{%static 'img/feature-property/fp-1.jpg'%}">
+                            <div class="fp-text">
+                                <h5 class="title">Home in Patel Nagar</h5>
+                                <p><span class="icon_pin_alt"></span> Patel Nagar Raisen Road Bhopal 462002</p>
+                                <div class="label">For Rent</div>
+                                <h5>₹ 20800<span>/month</span></h5>
+                                <ul>
+                                    <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                    <li><i class="fa fa-bathtub"></i> 03</li>
+                                    <li><i class="fa fa-bed"></i> 05</li>
+                                    <li><i class="fa fa-automobile"></i> 01</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fp-item set-bg" data-setbg="{%static 'img/feature-property/fp-2.jpg'%}">
+                            <div class="fp-text">
+                                <h5 class="title">Home in Patel Nagar</h5>
+                                <p><span class="icon_pin_alt"></span> Patel Nagar Raisen Road Bhopal 462002</p>
+                                <div class="label">For Rent</div>
+                                <h5>₹ 30000<span>/month</span></h5>
+                                <ul>
+                                    <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                    <li><i class="fa fa-bathtub"></i> 04</li>
+                                    <li><i class="fa fa-bed"></i> 05</li>
+                                    <li><i class="fa fa-automobile"></i> 02</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------- Feature Property Section End ------------------------->
+
+
+    <!------------------------- Categories Section Begin ------------------------->
+    <section class="categories-section">
+        <div class="cs-item-list">
+            <div class="cs-item set-bg" data-setbg="{%static './img/Categories/img01.jpg'%}">
+                <div class="cs-text">
+                    <h5>HOUSE</h5>
+                    <span>230 property</span>
+                </div>
+            </div>
+            <div class="cs-item set-bg" data-setbg="{%static './img/Categories/img02.jfif'%}">
+                <div class="cs-text">
+                    <h5>ROOM</h5>
+                    <span>230 property</span>
+                </div>
+            </div>
+            <div class="cs-item set-bg" data-setbg="{%static './img/Categories/img03.jfif'%}">
+                <div class="cs-text">
+                    <h5>Hostel</h5>
+                    <span>230 property</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------- Categories Section End ------------------------->
+
+    <!------------------------- Testimonial Section Begin ------------------------->
+    <section class="testimonial-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h4>What our client says?</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row testimonial-slider owl-carousel">
+                <div class="col-lg-6">
+                    <div class="testimonial-item">
+                        <div class="ti-text">
+                            <p>I’m never really worried that when i will come to bhopal new Rooms isn’t going to get there on time. I can call over there and talk to anyone and get my questions answered in an instant. </p>
+                        </div>
+                        <div class="ti-author">
+                            <div class="ta-pic">
+                                <img src="{%static 'img/testimonial-author/img01.jpg'%}" alt="">
+                            </div>
+                            <div class="ta-text">
+                                <h5>Vivek Singh</h5>
+                                <span>Student</span>
+                                <div class="ta-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-item">
+                        <div class="ti-text">
+                            <p>Ease of getting a hold of people. All communication with them is really easy. They do handle everything.</p>
+                        </div>
+                        <div class="ti-author">
+                            <div class="ta-pic">
+                                <img src="{%static 'img/testimonial-author/img02.jpg'%}" alt="">
+                            </div>
+                            <div class="ta-text">
+                                <h5>Shivhari</h5>
+                                <span>Student</span>
+                                <div class="ta-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-item">
+                        <div class="ti-text">
+                            <p>“Excellent service and with a “down to earth” approach.”</p>
+                        </div>
+                        <div class="ti-author">
+                            <div class="ta-pic">
+                                <img src="{%static 'img/testimonial-author/img03.jpg'%}" alt="">
+                            </div>
+                            <div class="ta-text">
+                                <h5>Prakash</h5>
+                                <span>Buisness Man</span>
+                                <div class="ta-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-item">
+                        <div class="ti-text">
+                            <p>“Extremely knowledgeable and helpful staff.”</p>
+                        </div>
+                        <div class="ti-author">
+                            <div class="ta-pic">
+                                <img src="{%static 'img/testimonial-author/img04.jpg'%}" alt="">
+                            </div>
+                            <div class="ta-text">
+                                <h5>Deepak Kumar</h5>
+                                <span>Student</span>
+                                <div class="ta-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------- Testimonial Section End ------------------------->
+
+    <!------------------------- Contact Section Begin ------------------------->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="ci-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="ci-text">
+                                <h5>Address</h5>
+                                <p>Raisen Rd, Manak Vihar, Patel Nagar, Bhopal, Madhya Pradesh 462022, India</p>
+                            </div>
+                        </div>
+                        <div class="ci-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="ci-text">
+                                <h5>Phone</h5>
+                                <ul>
+                                    <li>+91-9673245352</li>
+                                    <li>+91-7236498265</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ci-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-headphones"></i>
+                            </div>
+                            <div class="ci-text">
+                                <h5>Support</h5>
+                                <p>yourspacerental@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.821905181916!2d77.49712442470494!3d23.24956699688645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c413db9ba19a1%3A0xcd0fa6add9eca29e!2sPatel%20Nagar!5e0!3m2!1sen!2sbd!4v1637593811364!5m2!1sen!2sbd"
+                height="450" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </section>
+    <!------------------------- Contact Section End ------------------------->
+
+    <!------------------------- Footer Section Begin ------------------------->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-about">
+                        <div class="fs-logo">
+                            <a href="./index.html"><h6>YOUR SPACE RENTAL <i class="fa fa-home" style="font-size:40px"></i></h6></a>
+                        </div>
+                        <p>Your Space Rental is India's fastest growing "Managed Home Rental Network" attempting to provide better rental solutions via design & technology.</br>
+                        Whatever be your budget, whatever you may call a home (a bed, a room or an entire house), we have something for you!</p>
+                        <div class="fs-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Help</h5>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Support</a></li>
+                            <li><a href="#">Knowledgebase</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Links</h5>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Create Property</a></li>
+                            <li><a href="#">My Properties</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-widget">
+                        <h5>Feedback</h5>
+                        <p>Please Give Us Feedback.</p>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter Your Feedback">
+                            <button type="submit" class="site-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+    <!------------------------- Footer Section End ------------------------->
+
+    <!------------------------- Js Plugins ------------------------->
+    <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{% static 'js/mixitup.min.js'%}"></script>
+    <script src="{% static 'js/jquery-ui.min.js'%}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js'%}"></script>
+    <script src="{% static 'js/jquery.slicknav.js'%}"></script>
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'js/jquery.richtext.min.js'%}"></script>
+    <script src="{% static 'js/image-uploader.min.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+</body>
+
+</html>
